@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Especifica el tipo de documento como HTML5 -->
+    <meta charset="UTF-8">
+    <!-- Define el idioma como español y la codificación de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título de la página que aparecerá en la pestaña del navegador -->
+    <title>Trabajo DAW</title>
+    <!-- Enlace al archivo CSS para los estilos -->
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <!-- Enlace al archivo JavaScript -->
+    <script type="text/JavaScript" src="/JS/javascript.js"></script>
+    <!-- Optimización de carga previa para fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fuente importada desde Google Fonts, con varios pesos -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Sección para incluir un reproductor de audio -->
+    <div>
+        <!-- Reproduce un archivo de audio al cargar la página, con controles visibles -->
+        <audio id="cancion" src="/AUDIO/oppenheimer.mp3" controls autoplay></audio>
+    </div>
+    <!-- Sección para incluir un reproductor de video -->
+    <div>
+        <!-- Video en bucle, sin sonido, que se reproduce automáticamente -->
+        <video src="/IMAGES/video.mp4" autoplay muted loop></video>
+    </div>
+    <!-- Sección de elementos de estado y flechas -->
+    <div>
+        <!-- H2 con ID "estado", usado para mostrar estado o texto desde JavaScript -->
+        <h2 id="estado"></h2>
+        <!-- H2 con ID "muted", también se puede actualizar dinámicamente -->
+        <h2 id="muted"></h2>
+        <!-- Imagen de flecha hacia arriba con una clase "flecha" y ID "up" -->
+        <img class="flecha" src="/IMAGES/up.png" id="up" alt="Flecha arriba">
+        <br>
+    </div>
+    <!-- Sección que muestra imágenes de flechas de navegación y enlaces a redes sociales -->
+    <div class="display">
+        <!-- Flechas direccionales (izquierda, abajo, derecha y espacio) con ID y texto alternativo -->
+        <img src="/IMAGES/left.png" id="left" alt="Flecha izquierda">
+        <img src="/IMAGES/down.png" id="down" alt="Flecha abajo">
+        <img src="/IMAGES/right.png" id="right" alt="Flecha derecha">
+        <img src="/IMAGES/space.png" id="space" alt="Tecla espacio">
+        <!-- Enlace a Discord que se abre en una nueva pestaña -->
+        <a href="https://www.discord.com" target="_blank">
+            <img class="iconos" src="/IMAGES/discord.png" alt="Logo de discord">
+        </a>
+        <!-- Enlace a Twitch que se abre en una nueva pestaña -->
+        <a href="https://www.twitch.tv" target="_blank">
+            <img class="iconos" src="/IMAGES/twitch.png" alt="Logo de twitch">
+        </a>
+        <!-- Enlace a Reddit que se abre en una nueva pestaña -->
+        <a href="https://www.reddit.com" target="_blank">
+            <img class="iconos" src="/IMAGES/reddit.png" alt="Logo de reddit">
+        </a>
+    </div>
+</body>
+</html>

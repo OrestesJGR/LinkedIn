@@ -1,0 +1,58 @@
+/* Estilo para el elemento de video de fondo */
+video {
+  position: fixed; /* Fija el video en la ventana del navegador */
+  top: 0;
+  left: 0;
+  width: 100%; /* El video ocupa el ancho total de la ventana */
+  height: 100%; /* El video ocupa el alto total de la ventana */
+  overflow: hidden;
+  z-index: -1; /* Coloca el video en el fondo, detrás de otros elementos */
+}
+
+/* Configura el ajuste de video para cubrir toda la pantalla */
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Asegura que el video cubra completamente el contenedor sin deformarse */
+}
+
+/* Estilo general para imágenes */
+img {
+  height: 3%; /* Establece la altura de las imágenes como el 3% del contenedor */
+  width: 3%; /* Establece el ancho de las imágenes como el 3% del contenedor */
+  padding: 0.3%; /* Agrega un pequeño espacio alrededor de las imágenes */
+}
+
+/* Estilo para el elemento de audio */
+audio {
+  float: right; /* Coloca el reproductor de audio alineado a la derecha */
+}
+
+/* Clase para la flecha */
+.flecha {
+  margin-left: 3.8%; /* Margen izquierdo para posicionar la flecha */
+  margin-top: 33%; /* Margen superior para ajustar la posición vertical de la flecha */
+}
+
+/* Estilo para los elementos de texto (<p>) */
+p {
+  color: white; /* Define el color del texto en blanco */
+}
+
+/* ID específico para la flecha hacia arriba */
+#arriba {
+  margin-left: 3%; /* Margen izquierdo para ajustar la posición */
+  margin-top: 0; /* Margen superior en 0 para ajustar su alineación */
+}
+
+/* Estilo para iconos de redes sociales */
+.iconos {
+  width: 4%; /* Define el ancho de los iconos */
+  height: 4%; /* Define la altura de los iconos */
+  float: right; /* Alinea los iconos a la derecha */
+}
+
+/* Estilo para los encabezados de segundo nivel (h2) */
+h2 {
+  color: white; /* Color blanco para el texto de los encabezados h2 */
+}
