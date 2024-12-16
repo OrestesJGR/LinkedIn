@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Declaración del documento como HTML5 y configuración del idioma como español -->
+    <meta charset="UTF-8">
+    <!-- Establece la configuración para que el sitio sea responsivo en dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título de la página -->
+    <title>Agencia de Viajes</title>
+    <!-- Importa el CSS de Bootstrap para estilos prediseñados -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Incluye un archivo JavaScript personalizado -->
+    <script type="text/JavaScript" src="/JS/script.js"></script>
+    <!-- Importa SweetAlert2 para mostrar alertas personalizadas -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <!-- Sección para gestionar clientes -->
+        <h2>Clientes</h2>
+        <!-- Formulario para añadir nuevos clientes -->
+        <form class="form-inline mb-3">
+            <input type="text" class="form-control mr-2" placeholder="Nombre" id="nombre">
+            <input type="text" class="form-control mr-2" placeholder="Apellidos" id="apellido">
+            <input type="email" class="form-control mr-2" placeholder="Correo Electrónico" id="email">
+            <input type="tel" class="form-control mr-2" placeholder="Teléfono" id="telefono">
+            <!-- Botón para añadir cliente, sin envío de formulario (usa JavaScript) -->
+            <button type="button" class="btn btn-secondary" id="btnAnadirCliente">Añadir Cliente</button>
+        </form>
+        <!-- Tabla para mostrar la lista de clientes -->
+        <table class="table table-bordered">
+            <thead class="thead-dark" id="thead">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellidos</th>
+                    <th>Email</th>
+                    <th>Teléfono</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="tabla1">
+                <!-- Filas de clientes generadas dinámicamente con JavaScript -->
+            </tbody>
+        </table>
+
+        <!-- Sección para gestionar viajes -->
+        <h2>Viajes</h2>
+        <!-- Formulario para añadir nuevos viajes -->
+        <form class="form-inline mb-3">
+            <input type="text" class="form-control mr-2" placeholder="Código" id="codigo">
+            <input type="text" class="form-control mr-2" placeholder="Destino" id="destino">
+            <input type="number" class="form-control mr-2" placeholder="Precio" id="precio">
+            <!-- Selector para elegir el tipo de viaje -->
+            <select class="form-control mr-2" id="selector">
+                <option selected>Tipo de Viaje</option>
+                <option>Paquete</option>
+                <option>Individual</option>
+            </select>
+            <!-- Botón para añadir viaje -->
+            <button type="button" class="btn btn-secondary" id="btnAnadirViaje">Añadir Viaje</button>
+        </form>
+        <!-- Tabla para mostrar la lista de viajes -->
+        <table class="table table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Código</th>
+                    <th>Destino</th>
+                    <th>Precio</th>
+                    <th>Tipo</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="tabla2">
+                <!-- Filas de viajes generadas dinámicamente con JavaScript -->
+            </tbody>
+        </table>
+
+        <!-- Sección para gestionar reservas -->
+        <h2>Reservas</h2>
+        <!-- Formulario para crear reservas -->
+        <form class="form-inline mb-3">
+            <!-- Selector para elegir un cliente existente -->
+            <select class="form-control mr-2" id="selCliente">
+                <option selected>Seleccionar Cliente</option>
+            </select>
+            <!-- Selector para elegir un viaje existente -->
+            <select class="form-control mr-2" id="selViaje">
+                <option selected>Seleccionar Viaje</option>
+            </select>
+            <!-- Botón para crear una nueva reserva -->
+            <button type="button" class="btn btn-secondary" id="btnCrearReserva">Crear Reserva</button>
+        </form>
+        <!-- Tabla para mostrar la lista de reservas -->
+        <table class="table table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Cliente</th>
+                    <th>Viaje</th>
+                    <th>Fecha</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="tabla3">
+                <!-- Filas de reservas generadas dinámicamente con JavaScript -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Importa jQuery, necesario para el funcionamiento de Bootstrap y otras interacciones -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- Importa el JavaScript de Bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
