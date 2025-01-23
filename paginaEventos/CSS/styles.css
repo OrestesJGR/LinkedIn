@@ -1,0 +1,17 @@
+/* Estilo para el fondo del cuerpo del documento */
+body {
+    background-color: #f8f9fa;
+}
+
+/* Estilo para la barra de navegación */
+.navbar {
+    margin-bottom: 20px;
+}
+
+/* Estilo para el contenedor de la tabla */
+.table-container {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
